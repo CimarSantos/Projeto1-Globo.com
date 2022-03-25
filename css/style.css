@@ -1,0 +1,262 @@
+body {
+    font-family: 'Encode Sans', sans-serif;
+}
+
+.conteudo {
+    width: 1250px;
+    margin: 0 auto 0 auto;
+    justify-content: center;
+}
+
+.topo {
+    height: 80px;
+    background-image: url('/img/header-grid-logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logoGlobo {
+    width: 171px;
+}
+
+.menu-topo {
+    height: 40px;
+    border: 1px solid #f5f6f7;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+a:link {
+    text-decoration: none;
+    color: #303134;
+}
+
+.vermelho {
+    color: #C3170C;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.azul {
+    color: #1E4B9B;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.verde-escuro {
+    color: #006766;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.verde-claro {
+    color: #07AA47;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.laranja {
+    color: #E3662B;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.rosa {
+    color: #FF75BB;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.quase-preto{
+    color: #323333;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.pink {
+    color: #A81D83;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.containers {
+    display: flex;
+}
+
+.container-left {
+    width: 50%;
+    justify-content: center;
+}
+
+.primeiras-materias {
+    margin: 20px auto 20px auto;
+
+}
+
+.materia-principal {
+    font-size: 52px;
+    font-weight: bold;
+    color: #c4160c;
+    margin-bottom: 30px;
+}
+
+.materia-secundaria, .materia-secundaria p {
+    margin: 10px 0 10px 0;
+}
+
+.separa-horizontal {
+    border: 1px solid #ebedef;
+    margin: 30px auto 20px auto;
+}
+
+.container-materias {
+    display: flex;
+    justify-content: center;
+    margin-left: 35px;
+}
+
+.segundo-container-materias {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    margin: 0 0 30px 10px;
+}
+
+.link-materia {
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+.link-segunda-materia {
+    justify-content: space-between;
+}
+
+.imagem-materia {
+    border-radius: 12px;
+    width: 185px;
+    height: 110px;
+}
+
+.titulo-materia {
+    font-size: 14px;
+    font-weight: 500;
+    color: #C4170C;
+    margin: 10px 0 10px 0;
+}
+
+.descricao-materia {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0 10px 0;
+}
+
+.materia-relacionada {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.separa{
+    margin: 20px auto 20px 20px;
+    border: 1px solid #ebedef;
+}
+
+/* Segundo Container */
+
+
+.primeira-coluna, .segunda-coluna {
+
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-noticia {
+    margin: 30px 0 20px 20px;
+}
+
+.container-noticia img {
+    border-radius: 12px;
+    width: 240px;
+    height: 128px;
+}
+
+.titulo-noticia {
+    color: #16AE54;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 10px 0 10px 0;
+}
+
+.titulo-noticia-segunda {
+    color: #EC8006;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 10px 0 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topo {
+      
+        background-image: url('/img/Mobile/header-grid-logo-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        
+    }
+    
+    .conteudo {
+
+        max-width: 768px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-topo {
+        justify-content: space-evenly;
+        align-items: center;
+        margin: auto;
+    }
+
+    .containers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .container-left, .container-rigth {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .primeiras-materias {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+    
+    }
+
+    .segundo-container-materias {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 0 30px 40px;
+    }
+
+
+
+  }
